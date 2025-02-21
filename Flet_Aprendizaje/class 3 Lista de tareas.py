@@ -35,9 +35,9 @@ def main(page: ft.Page):
     
     #titulo de la pagina
     titulo = ft.Text('Mi lista con flet', size = 30, weight= ft.FontWeight.BOLD, color= ft.colors.WHITE)
-    campo_tarea = ft.TextField(hint_text='Escribe una nueva Tarea')
+    campo_tarea = ft.TextField(hint_text='Escribe una nueva Tarea', fill_color= ft.colors.WHITE, border_color= ft.colors.BLUE_GREY_500, border_width= 2.5)
 
-    boton_agregar = ft.FilledButton(text="Agregar Tareas", on_click=agregar_tarea)
+    boton_agregar = ft.FilledButton(text="Agregar Tareas", on_click=agregar_tarea, color= ft.colors.BLUE_200)
 
     lista_tareas = ft.ListView(expand=1, spacing= 3)
 
