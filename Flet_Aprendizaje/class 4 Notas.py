@@ -44,6 +44,7 @@ def main(page: ft.Page):
                 padding= 10,
             )
 
+        #usamos return para decir el resultado de la funcion
         return note
 
 
