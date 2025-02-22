@@ -67,6 +67,7 @@ def main(page: ft.Page):
     for note in notes: 
         grid.controls.append(create_note(note))
 
+#usamos page.add para mostrar todo en la aplicacion
     page.add(ft.Row #esta fila sera lo que nos funcione como titulo o zona superior de la aplicacion
              ([
                  ft.Text('Mis notas Adhesivas', size= 24, weight="bold", color= ft.colors.WHITE ),
