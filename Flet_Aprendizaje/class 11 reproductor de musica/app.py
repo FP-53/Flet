@@ -29,8 +29,6 @@ async def main(page : ft.Page):
     page.title = 'Reproductor de musica'
     page.padding = 20
 
-    titulo = ft.Text('Reproductor de Musica', size=30, color=ft.colors.WHITE)
-
     #usamos el mixer de pygame y le damos inicio para que nos permita reproducir musica
     pygame.mixer.init()
 
@@ -138,7 +136,7 @@ async def main(page : ft.Page):
         alignment= ft.MainAxisAlignment.CENTER, 
         spacing=20
         )
-
+ 
     page.add(columna)
 
     if playlist:
